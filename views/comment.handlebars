@@ -1,0 +1,33 @@
+<div class="container">   
+    
+    <div class="card-header"> {{!-- Show Post --}}
+        <h2>{{post.title}}</h2>
+        <div class="left">Posted by {{post.user.username}} on {{postDate post.createdAt}}</div>
+    </div>
+    <div>
+        <textarea rows="5" class="textContent" readonly>{{post.body}}</textarea>
+    </div>
+
+    {{#each post.comments}}    
+    <div> {{!-- Old Comments  --}}        
+        <div class="textContent author">            
+            {{body}}
+            <div class="left"> {{user.username}}, {{postDate createdAt}}</div>            
+        </div>
+    </div>
+    {{/each}}
+
+    <div> {{!-- Add a comment  --}}
+        <form id="frmComment">
+            <div class="card-header">Comment</div>
+            <div class="card-text">
+                <input type="hidden" id="post-id" value="{{post.id}}" />
+                <textarea id="content" placeholder="Add you comment" class="textBox" required></textarea>
+                <div class="left"><button class="btn">Submit</button></div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<script src="/js/newComment.js"></script>

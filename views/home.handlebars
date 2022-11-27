@@ -1,0 +1,15 @@
+<div class="container">   
+
+    {{#each posts}}    
+    <div class="card-header"><a href="/api/comment/new/{{id}}" title="Add a comment">
+        <h2>{{title}}</h2>
+        <div class="left">Posted by {{user.username}} on {{postDate createdAt}}</div>        
+        </a>
+    </div>
+    <div>
+        <textarea rows="5" class="textContent" readonly>{{body}}</textarea>
+    </div>
+
+    {{/each}}
+
+</div>
