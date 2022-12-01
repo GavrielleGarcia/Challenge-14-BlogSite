@@ -23,25 +23,25 @@ After the dependencies are installed, create a .ENV file and fill it with your c
 
 ```bash
 
-DB_NAME='TheMindOfADeveloper_db'
+DB_NAME='tech_blog_db'
 DB_USER='root'
 DB_PASSWORD='UPDATE YOUR PASSWORD HERE'
 
 ```
 
-Now, you can proceed to create the datbase schema:
+Now, you can proceed to create the datbase schema through MySQL:
 
 ```bash
  #under MySQL terminal
     mysql -u root -p
     # to create the DB schema
-    db/SOURCE schema.sql
+    source db/schema.sql
 ```
 
-Then, start working with the main file:
+Then, start working with the server.js file:
 
 ```bash
- #    NPM START
+ npm start
 ```
 
 ## Technologies Used
@@ -52,14 +52,14 @@ Then, start working with the main file:
  
 
  ## Overview 
-[![Watch the video](https://github.com/GavrielleGarcia/Challenge-14-BlogSite/tree/main/public/assets)
-
+In progress
+Error messages that I could not fix
  
 ## Contributing 
  Open to any contribution (:.
  
  
 ## Questions
-  You can see more of my work on [gavriellegarcia](https://github.com/gavriellegarcia).
+  My Stuff [gavriellegarcia](https://github.com/gavriellegarcia).
 
-  If you have any additional questions send me an owl: gavrielle.garcia@hotmail.com.  
+  Send me an owl: gavrielle.garcia@hotmail.com.  
